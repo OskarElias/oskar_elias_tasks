@@ -11,8 +11,10 @@
 		}
 	</style>
 </head>
+<?php 
+include "header.php"; ?>
 <body>
-	<?
+	<?php
 		$title="PHP is interesting.";
 		$g1=5;
 		$g2=4;
@@ -55,5 +57,7 @@
 		<h3>V. Commit all the changes you've made and push them to your GitHub repository to complete the task.</h3>
 		<span><a href="https://github.com/OskarElias/oskar_elias_tasks">GitHub Repo Link</a></span>
 	</div>
+<?php
+include "footer.php"; ?>
 </body>
 </html>
