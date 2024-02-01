@@ -119,13 +119,15 @@
 			</div>
 		</div>
 		<div class="row">
-			<?php 
-			echo "<h2>Array</h2>";
-			$myArray = array("HTML", "CSS", "PHP", "JavaScript");
-			foreach ($myArray as $x) {
-			  echo "$x, ";
-			}
-			?>
+			<div id="array">
+				<?php 
+				echo "<h2>Array</h2>";
+				$myArray = array("HTML", "CSS", "PHP", "JavaScript");
+				foreach ($myArray as $x) {
+				echo "$x, ";
+				}
+				?>
+			</div>
 		</div>
 	</div>
 	<?php include('footer.php') ?>
