@@ -10,7 +10,6 @@
 <?php include 'header.php'; ?>
 <body>
 	<div class="container-fluid align-items-center">
-		
 		<div class="row justify-content-md-center">
 			<div class="col"></div>
 			<div class="col-md-auto">
