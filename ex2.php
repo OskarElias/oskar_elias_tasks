@@ -1,6 +1,7 @@
 <?php 
 $title="Exercise 2";
-include 'header.php' ?>
+include 'header.php'; 
+$modTime = filemtime($_SERVER['SCRIPT_FILENAME']);?>
 
 <html>
 	<body>

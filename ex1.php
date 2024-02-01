@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<?php $title="Exercise 1" ?>
+	<?php $title="Exercise 1"; 
+	$modTime = filemtime($_SERVER['SCRIPT_FILENAME']);?>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Exercise 1: Getting Started with PHP - Oskar</title>

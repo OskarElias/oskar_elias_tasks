@@ -1,12 +1,16 @@
 <div class="row">
 <footer style="background-color: rgb(65, 7, 109); color: white;">
-
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© 2020 Copyright
-  </div>
-  <!-- Copyright -->
-
-</footer></div>
+    <div class="col"></div>
+    <div class="col-md-auto">
+      <div class="footer-copyright text-center py-3">© 2020 Copyright</div>
+    </div>
+    <div class="col-md-4">
+      <?php echo $_SERVER['SERVER_NAME'];
+        echo "<br>Last modified time: " . date("F d Y  H:i:s.", $modTime);
+      ?>
+    </div>
+</footer>
+</div>
 </div>
 
 <!-- Optional JavaScript -->
