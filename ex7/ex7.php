@@ -1,4 +1,4 @@
-<h2>Voting Form</h2>
+<h2>User Form</h2>
 <form name="form1" method="post" action="">
     <div class="form-group">
         <div class="row">
@@ -32,4 +32,42 @@
     </div>
     <button type="submit" class="btn btn-primary" name="submit">Submit</button>
 </form>
-<?php include '../database/process.php' ?>
+
+<h2>Retrieved Data</h2>
+<?php
+include '../database/conn.php';
+include '../database/process.php';
+// retrieving data
+$sql = "SELECT * FROM studentsinfo";
+// execute query and show result if data present
+$result = $conn->query($sql);
+if ($result->num_rows > 0) {
+	echo 
+	"<table class='table'>
+		<thead>
+			<tr>
+				<th>ID</th>
+				<th>First Name</th>
+				<th>Last Name</th>
+				<th>City</th>
+				<th>Group ID</th>
+			</tr>
+		</thead>
+		<tbody>";
+			while ($row = $result->fetch_assoc()) {
+				echo 
+				"<tr>
+					<td>{$row['id']}</td>
+					<td>{$row['first_name']}</td>
+					<td>{$row['last_name']}</td>
+					<td>{$row['city']}</td>
+					<td>{$row['groupId']}</td>
+				</tr>";
+			}
+		echo "</tbody></table>";
+} else {
+	// display message if no results found
+	echo "No results.";
+}
+$conn->close();
+?>
