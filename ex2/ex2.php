@@ -1,6 +1,6 @@
 <?php 
 $title="Exercise 2";
-include 'header.php'; 
+include '../layout/header.php'; 
 $modTime = filemtime($_SERVER['SCRIPT_FILENAME']);?>
 
 <html>
@@ -11,5 +11,5 @@ $modTime = filemtime($_SERVER['SCRIPT_FILENAME']);?>
 
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam autem vel quia facilis sit accusamus voluptates sunt laboriosam placeat, esse eveniet. Esse voluptatum, deleniti obcaecati natus in officia pariatur sunt?</p>
 	</body>
-<?php include 'footer.php' ?>
+<?php include '../layout/footer.php' ?>
 </html>

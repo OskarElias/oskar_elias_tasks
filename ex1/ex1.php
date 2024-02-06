@@ -5,7 +5,6 @@
 	$modTime = filemtime($_SERVER['SCRIPT_FILENAME']);?>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Exercise 1: Getting Started with PHP - Oskar</title>
 	<style>
 		table, th, td {
 			border: 1px solid black;
@@ -14,7 +13,7 @@
 	</style>
 </head>
 <?php 
-include "header.php"; ?>
+include "../layout/header.php"; ?>
 <body>
 	<?php
 		$title="PHP is interesting.";
@@ -55,11 +54,11 @@ include "header.php"; ?>
 	</div>
 	<div class="others">
 		<h3>IV. Take a screenshot that confirms your development environment setup and include it as an image in the \"ex1.php\" file.</h3>
-		<img src="./img/ex1_1.png">
+		<img src="../img/ex1_1.png">
 		<h3>V. Commit all the changes you've made and push them to your GitHub repository to complete the task.</h3>
 		<span><a href="https://github.com/OskarElias/oskar_elias_tasks">GitHub Repo Link</a></span>
 	</div>
 <?php
-include "footer.php"; ?>
+include "../layout/footer.php"; ?>
 </body>
 </html>
